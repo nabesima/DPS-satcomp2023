@@ -69,7 +69,7 @@ class Runner:
         combined_hostfile = self.create_hostfile(worker_node_ips, self.request_directory)
 
         run_list = ["/competition/run-DPS.sh"]
-        run_list.append(combined_hostfile)
+        #run_list.append(combined_hostfile)
         run_list.append(formula_file)
 
         return run_list
