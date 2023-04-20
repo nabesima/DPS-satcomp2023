@@ -1,9 +1,6 @@
 *.*~
-*.bbl
-*.bib
 *.org
-*.tex
-*.cls
-conference-latex-template_10-17-19.zip
-AWS.org
 /test
+/solver-description
+!/README.org
+!/solver-description/DPS-Kissat.pdf
