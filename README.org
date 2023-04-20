@@ -1,17 +1,18 @@
-#+TITLE: DPS-Kissat
+#+TITLE: NPS-Kissat
 #+AUTHOR:  Hidetomo Nabeshima, Tsubasa Fukiage, Yuto Obitsu, and Katsumi Inoue
 
 DPS is a new framework for easily constructing efficient deterministic
 parallel SAT solvers, providing the delayed clause exchange technique
 introduced in [[https://github.com/nabesima/manyglucose-satcomp2020][ManyGlucose]]. DPS-Kissat applies our framework to [[http://fmv.jku.at/kissat/][Kissat]],
-a state-of-the-art sequential SAT solver. 
+a state-of-the-art sequential SAT solver. NPS-Kissat is the
+non-deterministic version of DPS-Kissat.
 
 * How to build a docker container for AWS environment
 
 : % ./build-DPS-images.sh
 
-The above script generates ~dps-satcomp2023:leader~ container which is
+The above script generates ~nps-satcomp2023:leader~ container which is
 based on ~satcomp-infrastructure:leader~ container provided by
 https://github.com/aws-samples/aws-batch-comp-infrastructure-sample/tree/sat-comp-2023.
-DPS-Kissat is a parallel SAT solver for shared memory
+NPS-Kissat is a parallel SAT solver for shared memory
 environments. Thus we do not require a worker container.

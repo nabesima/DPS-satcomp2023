@@ -4,5 +4,5 @@ docker build -t dps-satcomp2023:common .
 cd ..
 
 cd leader
-docker build -t dps-satcomp2023:leader .
+docker build -t nps-satcomp2023:leader .
 cd ..
